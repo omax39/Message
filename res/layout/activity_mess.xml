@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.marlboro.message.MessActivity" >
+
+    <ListView
+        android:id="@+id/listmess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/butmess"
+        android:layout_alignParentRight="true"
+        android:scrollbarAlwaysDrawVerticalTrack="false" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/butmess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/editmess"
+        android:height="40dp"
+        android:minHeight="8dp"
+        android:minWidth="50dp"
+        android:text="Ok"
+        android:width="60dp" />
+
+    <EditText
+        android:id="@+id/editmess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/listmess"
+        android:layout_below="@+id/listmess"
+        android:ems="10"
+        android:width="270dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="200dp"
+        android:visibility="invisible" />
+
+</RelativeLayout>
